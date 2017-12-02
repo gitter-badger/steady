@@ -13,7 +13,7 @@
   },
   "author": "Bruno Dutra <brunocodutra@gmail.com>",
   "scripts": {
-    "spec": "mocha -r mocha.config.js spec/**/*.spec.ts",
+    "spec": "nyc mocha -r mocha.config.js spec/**/*.spec.ts",
     "start": "webpack-dev-server -d --progress --hot --inline",
     "dist": "webpack -p --env=production --progress"
   },
@@ -37,6 +37,7 @@
     "html-webpack-plugin": "^2.30.1",
     "mocha": "^4.0.1",
     "node-sass": "^4.6.0",
+    "nyc": "^11.3.0",
     "path": "^0.12.7",
     "postcss": "^6.0.14",
     "postcss-cssnext": "^3.0.2",
